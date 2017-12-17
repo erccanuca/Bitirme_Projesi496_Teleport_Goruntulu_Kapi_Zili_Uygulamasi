@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@mipmap/ic_launcher_back"
+        android:background="@android:color/white"
+        android:text="@string/back"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/responseTextView"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/view" />
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="300dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/lockButton"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-55dp"
+            android:background="@android:color/white"
+            android:drawableStart="@mipmap/ic_launcher_lock"
+            android:gravity="center"
+            android:text="@string/lock"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/video_viewButton"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="115dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:drawableTop="@mipmap/ic_launcher_camera"
+        android:text="@string/view_camera"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/unlockButton"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:drawableEnd="@mipmap/ic_launcher_unlock"
+        android:text="@string/unlock"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:drawableEnd="@mipmap/ic_launcher_exit_to_app"
+        android:text="@string/exit"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>
